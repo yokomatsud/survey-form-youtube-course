@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>動画コースのアンケート</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="title">動画コースのアンケート</h1>
+    <p id="description">YouTube 動画コースの感想を教えてください。</p>
+
+    <img src="https://res.cloudinary.com/dmxwayptq/image/upload/v1671712324/pexels-alex-green-5699456_yemsfw.jpg"
+      alt="アンケートのイメージ画像">
+
+    <form id="survey-form">
+      <label id="name-label" for="name">名前</label>
+      <input id="name" class="bottom-spacing" type="text" placeholder="山田 花子" required>
+      <label id="email-label" for="email">メールアドレス</label>
+      <input id="email" class="bottom-spacing" type="email" placeholder="test@example.com" required>
+      <label id="number-label" for="number">年齢</label>
+      <input id="number" class="bottom-spacing" type="number" min="0" max="100" placeholder="30">
+
+      <label for="dropdown">職業</label>
+      <select id="dropdown" class="bottom-spacing">
+        <option>学生</option>
+        <option>エンジニア</option>
+        <option>エンジニア以外の仕事</option>
+        <option>その他</option>
+      </select>
+
+      <fieldset class="bottom-spacing">
+        <legend>動画の内容はわかりやすかったですか？</legend>
+        <input id="good" type="radio" name="understanding" value="good">
+        <label for="good">わかりやすかった</label>
+
+        <input id="okay" type="radio" name="understanding" value="okay">
+        <label for="okay">まあまあ</label>
+
+        <input id="bad" type="radio" name="understanding" value="bad">
+        <label for="bad">わかりにくかった</label>
+      </fieldset>
+
+      <fieldset class="bottom-spacing">
+        <legend>この動画をどこで知りましたか？</legend>
+        <input id="tweet-fcc-ja" type="checkbox" value="tweet-fcc-ja">
+        <label for="tweet-fcc-ja">@freeCodeCampJA のツイート</label><br>
+
+        <input id="tweet-other" type="checkbox" value="tweet-other">
+        <label for="tweet-other">その他のツイート</label><br>
+
+        <input id="youtube" type="checkbox" value="youtube">
+        <label for="youtube">YouTube のおすすめ</label><br>
+
+        <input id="friends" type="checkbox" value="friends">
+        <label for="friends">友人・知人からの口コミ</label><br>
+
+        <input id="other" type="checkbox" value="other">
+        <label for="other">その他</label>
+      </fieldset>
+
+      <label for="feedback">動画の感想を聞かせてください。</label>
+      <textarea id="feedback" class="bottom-spacing" cols="50" rows="5"></textarea>
+
+      <input id="submit" type="submit" value="回答する">
+    </form>
+  </div>
+</body>
+
+</html>
