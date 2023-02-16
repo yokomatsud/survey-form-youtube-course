@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動画コースのアンケート</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">動画コースのアンケート</h1>
+    <p id="description">YouTube 動画コースの感想を教えてください。</p>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">名前</label>
+      <input id="name" type="text" placeholder="山田 花子" required>
+      <label id="email-label" for="email">メールアドレス</label>
+      <input id="email" type="email" placeholder="test@example.com" required>
+      <label id="number-label" for="number">年齢</label>
+      <input id="number" type="number" min="0" max="100" placeholder="30">
+
+      職業
+      <select id="dropdown">
+        <option>学生</option>
+        <option>エンジニア</option>
+        <option>エンジニア以外の仕事</option>
+        <option>その他</option>
+      </select>
+
+      動画の内容はわかりやすかったですか？
+      <input type="radio" name="understanding" value="good">わかりやすかった
+      <input type="radio" name="understanding" value="okay">まあまあ
+      <input type="radio" name="understanding" value="bad">わかりにくかった
+
+      この動画をどこで知りましたか？
+      <input type="checkbox" value="tweet-fcc-ja">@freeCodeCampJA のツイート
+      <input type="checkbox" value="tweet-other">その他のツイート
+      <input type="checkbox" value="youtube">YouTube のおすすめ
+      <input type="checkbox" value="friends">友人・知人からの口コミ
+      <input type="checkbox" value="other">その他
+
+      動画の感想を聞かせてください。
+      <textarea></textarea>
+
+      <input id="submit" type="submit">
+    </form>
+</body>
+</html>
